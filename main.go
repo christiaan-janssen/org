@@ -26,19 +26,23 @@ func logError(e error) {
 }
 
 func main() {
-	/*
-		var files []string
+	var files []string
 
-		root := "/home/christiaan/org"
-		err := filepath.Walk(root, visit(&files))
-		if err != nil {
-			panic(err)
-		}
-		for _, file := range files {
-			fmt.Println(file)
-		}
-	*/
-	file, err := os.Open("/home/christiaan/org/gtd.org")
+	root := "/home/christiaan/org"
+	err := filepath.Walk(root, visit(&files))
+	if err != nil {
+		panic(err)
+	}
+	for _, file := range files {
+		//fmt.Println(file)
+		ParseOrgFile(file)
+	}
+
+}
+
+// ParseOrgFile read a file and returns the todo items
+func ParseOrgFile(path string) {
+	file, err := os.Open(path)
 	logError(err)
 	defer file.Close()
 
@@ -53,5 +57,4 @@ func main() {
 	if err := scanner.Err(); err != nil {
 		log.Fatal(err)
 	}
-
 }
