@@ -1,0 +1,17 @@
+#+TITLE: README
+
+* ORG
+Org is a cli tool to parse your org files for todo's. This tool is inspired by
+[[https://taskwarrior.org/][Taskwarrior]].
+
+** Motivation
+I love the idea behind Taskwarrior, but I use org-mode to handle all my
+documentation and todo needs. As I was learning Go I was looking for a project
+to put it all in practice.
+
+** Features
+** Todo's
+*** TODO Pretty print the results
+*** TODO Parse schedules and deadlines
+*** TODO Mark items as done
+*** TODO Create new items
