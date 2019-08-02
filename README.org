@@ -10,8 +10,8 @@ documentation and todo needs. As I was learning Go I was looking for a project
 to put it all in practice.
 
 ** Features
-** Todo's
-*** TODO Pretty print the results
-*** TODO Parse schedules and deadlines
-*** TODO Mark items as done
-*** TODO Create new items
+** Todo's [0/4]
+- [ ] Pretty print the results
+- [ ] Parse schedules and deadlines
+- [ ] Mark items as done
+- [ ] Create new items
